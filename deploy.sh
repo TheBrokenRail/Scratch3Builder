@@ -5,6 +5,7 @@ SOURCE_BRANCH="master"
 TARGET_BRANCH="gh-pages"
 
 function doCompile {
+    echo "Pre-compiled"
 }
 
 # Pull requests and commits to other branches shouldn't try to deploy, just build to verify
