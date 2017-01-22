@@ -4,7 +4,7 @@
   "description": "A Program To Package Scratch 3.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "echo \"Error: no test specified\"",
     "deploy": "gh-pages -t -d out -m \"Build for $(git log --pretty=format:%H -n1)\""
   },
   "author": "TheBrokenRail",
