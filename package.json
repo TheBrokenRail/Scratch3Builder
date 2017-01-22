@@ -1,0 +1,17 @@
+{
+  "name": "scratch3builder",
+  "version": "1.0.0",
+  "description": "A Program To Package Scratch 3.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "TheBrokenRail",
+  "license": "ISC",
+  "dependencies": {
+    "nativefier": "^7.0.1"
+  },
+  "devDependencies": {
+    "webpack": "^1.14.0"
+  }
+}
