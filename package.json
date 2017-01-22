@@ -10,7 +10,7 @@
   "author": "TheBrokenRail",
   "license": "ISC",
   "dependencies": {
-    "nativefier": "^7.0.1"
+    "nativefier": "latest"
   },
   "devDependencies": {
     "gh-pages": "latest"
