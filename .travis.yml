@@ -12,9 +12,6 @@ install:
 - node index.js
 after_script:
 - |
-  # RELEASE_BRANCHES and NPM_TOKEN defined in Travis settings panel
-  declare exitCode
-  exitCode=$?
   # Publish to gh-pages as most recent committer
   git config --global user.email $(git log --pretty=format:"%ae" -n1)
   git config --global user.name $(git log --pretty=format:"%an" -n1)
