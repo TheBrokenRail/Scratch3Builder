@@ -5,14 +5,11 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\"",
-    "deploy": "gh-pages -t -d out -m \"Build for $(git log --pretty=format:%H -n1)\""
+    "deploy": "sh compile.sh"
   },
   "author": "TheBrokenRail",
   "license": "ISC",
   "dependencies": {
     "nativefier": "latest"
-  },
-  "devDependencies": {
-    "gh-pages": "latest"
   }
 }
