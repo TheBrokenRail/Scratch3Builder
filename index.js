@@ -8,7 +8,8 @@ var options = {
     asar: true, // see conceal
     showMenuBar: false,
     min-width: 1200,
-    min-height: 800
+    min-height: 800,
+    out: './out'
 };
 nativefier(options, function(error, appPath) {
     if (error) {
