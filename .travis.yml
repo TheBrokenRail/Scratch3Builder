@@ -10,7 +10,7 @@ script: bash ./deploy.sh
 env:
   global:
   - ENCRYPTION_LABEL: "c632016e8c09"
-  - COMMIT_AUTHOR_EMAIL: ""
+  - COMMIT_AUTHOR_EMAIL: "TheBrokenRail"
 install:
 - npm install
 - npm update
