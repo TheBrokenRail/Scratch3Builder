@@ -1,0 +1,21 @@
+language: node_js
+node_js:
+- "4"
+- "node"
+sudo: false
+cache:
+  directories:
+  - node_modules
+install:
+- npm install
+- npm update
+- node index.js
+after_script:
+- |
+  # RELEASE_BRANCHES and NPM_TOKEN defined in Travis settings panel
+  declare exitCode
+  exitCode=$?
+  # Publish to gh-pages as most recent committer
+  git config --global user.email $(git log --pretty=format:"%ae" -n1)
+  git config --global user.name $(git log --pretty=format:"%an" -n1)
+  npm run --silent deploy -- -x -r $GH_PAGES_REPO
