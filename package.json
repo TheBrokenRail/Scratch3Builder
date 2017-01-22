@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\"",
-    "deploy": "sh compile.sh"
+    "deploy": "sh deploy.sh"
   },
   "author": "TheBrokenRail",
   "license": "ISC",
