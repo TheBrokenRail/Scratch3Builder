@@ -19,3 +19,4 @@ after_script:
   git config --global user.email $(git log --pretty=format:"%ae" -n1)
   git config --global user.name $(git log --pretty=format:"%an" -n1)
   npm run --silent deploy -- -x -r $GH_PAGES_REPO
+  fi
