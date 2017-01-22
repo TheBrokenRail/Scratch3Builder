@@ -7,8 +7,8 @@ var options = {
     arch: 'x64', // defaults to the current system
     asar: true, // see conceal
     showMenuBar: false,
-    min-width: 1200,
-    min-height: 800,
+    minWidth: 1200,
+    minHeight: 800,
     out: './out'
 };
 nativefier(options, function(error, appPath) {
