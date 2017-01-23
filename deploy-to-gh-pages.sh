@@ -24,8 +24,6 @@ tar -cvzf Linux-ia32.tar.gz "Scratch 3.0-linux-ia32" > /dev/null 2>&1
 rm -r "Scratch 3.0-linux-ia32"
 tar -cvzf Mac-x64.tar.gz "Scratch 3.0-darwin-x64" > /dev/null 2>&1
 rm -r "Scratch 3.0-darwin-x64"
-tar -cvzf Mac-ia32.tar.gz "Scratch 3.0-darwin-ia32" > /dev/null 2>&1
-rm -r "Scratch 3.0-darwin-ia32"
 cp ../index.md ./
 cp ../_config.yml ./
 git init
