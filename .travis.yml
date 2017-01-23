@@ -6,9 +6,9 @@ addons:
   apt:
     packages:
     - wine
-    - xvfb
+    - xfvb
 script:
-  - xvfb-run bash ./deploy-to-gh-pages.sh
+  - bash ./deploy-to-gh-pages.sh
 env:
   global:
     - GITHUB_REPO: "TheBrokenRail/Scratch3Builder"
