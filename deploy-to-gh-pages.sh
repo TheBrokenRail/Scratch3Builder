@@ -14,15 +14,15 @@ node index.js
 
 # deploy
 cd out
-zip -r Win32-x64.zip "Scratch 3.0-win32-x64"
+zip -r -q -9 Win32-x64.zip "Scratch 3.0-win32-x64"
 rm -r "Scratch 3.0-win32-x64"
-zip -r Win32-ia32.zip "Scratch 3.0-win32-ia32"
+zip -r -q -9 Win32-ia32.zip "Scratch 3.0-win32-ia32"
 rm -r "Scratch 3.0-win32-ia32"
-zip -r Linux-x64.zip "Scratch 3.0-linux-x64"
+zip -r -q -9 Linux-x64.zip "Scratch 3.0-linux-x64"
 rm -r "Scratch 3.0-linux-x64"
-zip -r Linux-ia32.zip "Scratch 3.0-linux-ia32"
+zip -r -q -9 Linux-ia32.zip "Scratch 3.0-linux-ia32"
 rm -r "Scratch 3.0-linux-ia32"
-zip -r Mac-x64.zip "Scratch 3.0-darwin-x64"
+zip -r -q -9 Mac-x64.zip "Scratch 3.0-darwin-x64"
 rm -r "Scratch 3.0-darwin-x64"
 cp ../index.md ./
 cp ../_config.yml ./
