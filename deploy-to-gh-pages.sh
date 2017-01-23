@@ -24,6 +24,8 @@ zip -r Linux-ia32.zip "Scratch 3.0-linux-ia32"
 rm -r "Scratch 3.0-linux-ia32"
 rm -f index.md
 cp ../index.md ./
+rm -f _config.yml
+cp ../_config.yml ./
 git init
 git add .
 git commit -m "Deploy to Github Pages"
