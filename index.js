@@ -11,6 +11,7 @@ var options = {
     minHeight: 800,
     width: 1200,
     height: 800,
+    icon: './icon.png',
     disableContextMenu: true,
     out: './out'
 };
@@ -32,6 +33,7 @@ options = {
     minHeight: 800,
     width: 1200,
     height: 800,
+    icon: './icon.png',
     disableContextMenu: true,
     out: './out'
 };
@@ -53,6 +55,7 @@ options = {
     minHeight: 800,
     width: 1200,
     height: 800,
+    icon: './icon.png',
     disableContextMenu: true,
     out: './out'
 };
@@ -74,6 +77,7 @@ options = {
     minHeight: 800,
     width: 1200,
     height: 800,
+    icon: './icon.png',
     disableContextMenu: true,
     out: './out'
 };
@@ -95,6 +99,7 @@ options = {
     minHeight: 800,
     width: 1200,
     height: 800,
+    icon: './icon.png',
     disableContextMenu: true,
     out: './out'
 };
