@@ -6,7 +6,7 @@ addons:
   apt:
     packages:
     - wine
-    - xfvb
+    - xvfb
 script:
   - bash ./deploy-to-gh-pages.sh
 env:
