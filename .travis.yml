@@ -4,6 +4,8 @@ node_js:
 sudo: false
 addons:
   apt:
+    sources:
+    - sourceline: 'ppa:ubuntu-wine/ppa'
     packages:
     - wine
 script:
