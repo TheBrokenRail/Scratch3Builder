@@ -10,7 +10,7 @@ git config --global user.email "TheBrokenRail"
 git config --global user.name "Travis CI"
 
 # build (CHANGE THIS)
-node index.js
+xfvb-run nnode index.js
 
 # deploy
 cd out
