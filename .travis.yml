@@ -3,14 +3,15 @@ node_js:
 - "4"
 - "node"
 sudo: false
+script:
+  - bash ./deploy-to-gh-pages.sh
+env:
+  global:
+    - GITHUB_REPO: "TheBrokenRail/Scratch3Builder"
+    - secure: "hxoEb+lLRqHFGSMLN2xcp2B3qqKa3zLTzffnSqgdQ18pFsbDUPTvHgx+jzwU4IGuNBv6UL1rUzJdH770XyippnCRzcISbWz5Bq7zp373TetLh8xVG6RrkdnPmsA9TCGOlZMUsCRqH2GMgSJw6h7KKuAhWT/ZM8739CHyJGqsICINeFtiEftvhAKSQrxFvgAlFoiHLwr5NsM4QGvauB0uRDGf3020nedl/CoNkOjMUxFmAmI8n6g+FUd1uoqgQdLv1ZkF4GIcuffmGj5iTuSMakzSKX/VsM0W3jmR1UVEq5ILe/Nf4jqqnGugukp/U4CAtg0RNFUiJ2v2jqy4cDuvZb4ADMO9VSmOSonB2+j+yd0Qj7u6Xofsdi5qoh941NDY+CZnpozfqAa28nx4MlIX9sm1qQpGH4oVJaFV7BWKWNJhdxOtGuNa7QLlhRKwThckpYLVjENxdt2CX8+X6KasBJznmgMOd3kxPwBJLv1MyJuae6TsbswCUpqoFPxCH/PDdgC/E5VLWkIcT20HRdl209E4/Iq8vh+Mu+/n2SPZ1eiJc2ssYsezxkruViyNbZt8KxeEnP6sSWkV8QZ7Qs9t5EaFMF2IvEw3/3586pgztiRl7NBP74NJ2BY08esEF35u6eYgv2YoFo5N4V2SyQlmfz2a+YMfd36ctewO+WM7adk="
 cache:
   directories:
   - node_modules
-script: bash ./deploy.sh
-env:
-  global:
-  - ENCRYPTION_LABEL: "c632016e8c09"
-  - COMMIT_AUTHOR_EMAIL: "TheBrokenRail"
 install:
 - npm install
 - npm update
