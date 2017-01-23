@@ -11,6 +11,9 @@ env:
 cache:
   directories:
   - node_modules
+before_install:
+- sudo apt-get update -qq
+- sudo apt-get install -qq wine
 install:
 - npm install
 - npm update
