@@ -9,7 +9,7 @@ var options = {
     showMenuBar: false,
     minWidth: 1200,
     minHeight: 800,
-    out: './scratch'
+    out: './out'
 };
 nativefier(options, function(error, appPath) {
     if (error) {
