@@ -4,6 +4,8 @@
 
 [Windows 32bit](./Win32-ia32.zip)
 
-[Linux 64bit](./Linux-x64.zip)
+[Linux 64bit](./Linux-x64.tar.gz)
 
-[Linux 32bit](./Linux-ia32.zip)
+[Linux 32bit](./Linux-ia32.tar.gz)
+
+[Mac 64bit](./Mac-x64.tar.gz)
