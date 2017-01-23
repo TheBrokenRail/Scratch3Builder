@@ -11,7 +11,7 @@ var options = {
     minHeight: 800,
     width: 1200,
     height: 800,
-    icon: './icon.png',
+i    icon: './icon.png',
     disableContextMenu: true,
     out: './out'
 };
@@ -21,8 +21,7 @@ nativefier(options, function(error, appPath) {
         return;
     }
     console.log('App has been nativefied to', appPath);
-});
-options = {
+});options = {
     name: 'Scratch 3.0', // will be inferred if not specified
     targetUrl: 'llk.github.io/scratch-gui', // required
     platform: 'win32', // defaults to the current system
@@ -32,8 +31,7 @@ options = {
     minWidth: 1200,
     minHeight: 800,
     width: 1200,
-    height: 800,
-    icon: './icon.png',
+    height: 800,    icon: './icon.png',
     disableContextMenu: true,
     out: './out'
 };
@@ -43,8 +41,7 @@ nativefier(options, function(error, appPath) {
         return;
     }
     console.log('App has been nativefied to', appPath);
-});
-options = {
+});options = {
     name: 'Scratch 3.0', // will be inferred if not specified
     targetUrl: 'llk.github.io/scratch-gui', // required
     platform: 'linux', // defaults to the current system
@@ -99,7 +96,7 @@ options = {
     minHeight: 800,
     width: 1200,
     height: 800,
-    icon: './icon.png',
+    icon: './icon.icns',
     disableContextMenu: true,
     out: './out'
 };
