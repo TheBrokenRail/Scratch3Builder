@@ -11,6 +11,7 @@ var options = {
     minHeight: 800,
     width: 1200,
     height: 800,
+    disableContextMenu: true,
     out: './out'
 };
 nativefier(options, function(error, appPath) {
@@ -31,6 +32,7 @@ options = {
     minHeight: 800,
     width: 1200,
     height: 800,
+    disableContextMenu: true,
     out: './out'
 };
 nativefier(options, function(error, appPath) {
@@ -51,6 +53,7 @@ options = {
     minHeight: 800,
     width: 1200,
     height: 800,
+    disableContextMenu: true,
     out: './out'
 };
 nativefier(options, function(error, appPath) {
@@ -71,6 +74,7 @@ options = {
     minHeight: 800,
     width: 1200,
     height: 800,
+    disableContextMenu: true,
     out: './out'
 };
 nativefier(options, function(error, appPath) {
