@@ -14,4 +14,3 @@ env:
 install:
 - npm install
 - npm update
-- node index.js
