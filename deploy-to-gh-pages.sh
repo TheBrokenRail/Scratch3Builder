@@ -18,11 +18,11 @@ zip -r -q -9 Win32-x64.zip "Scratch 3.0-win32-x64"
 rm -r "Scratch 3.0-win32-x64"
 zip -r -q -9 Win32-ia32.zip "Scratch 3.0-win32-ia32"
 rm -r "Scratch 3.0-win32-ia32"
-zip -r -q -9 Linux-x64.zip "Scratch 3.0-linux-x64"
+tar -cvzf Linux-x64.tar.gz "Scratch 3.0-linux-x64" > /dev/null 2>&1
 rm -r "Scratch 3.0-linux-x64"
-zip -r -q -9 Linux-ia32.zip "Scratch 3.0-linux-ia32"
+tar -cvzf Linux-ia32.tar.gz "Scratch 3.0-linux-ia32" > /dev/null 2>&1
 rm -r "Scratch 3.0-linux-ia32"
-tar -cvzf Mac-x64.tar.gz "Scratch 3.0-darwin-x64"
+tar -cvzf Mac-x64.tar.gz "Scratch 3.0-darwin-x64" > /dev/null 2>&1
 rm -r "Scratch 3.0-darwin-x64"
 cp ../index.md ./
 cp ../_config.yml ./
