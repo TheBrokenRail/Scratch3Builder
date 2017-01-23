@@ -2,6 +2,10 @@ language: node_js
 node_js:
 - "node"
 sudo: false
+addons:
+  apt:
+    packages:
+    - wine
 script:
   - bash ./deploy-to-gh-pages.sh
 env:
@@ -11,9 +15,6 @@ env:
 cache:
   directories:
   - node_modules
-before_install:
-- sudo apt-get update -qq
-- sudo apt-get install -qq wine
 install:
 - npm install
 - npm update
