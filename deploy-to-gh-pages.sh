@@ -22,6 +22,7 @@ zip -r Linux-x64.zip "Scratch 3.0-linux-x64"
 rm -r "Scratch 3.0-linux-x64"
 zip -r Linux-ia32.zip "Scratch 3.0-linux-ia32"
 rm -r "Scratch 3.0-linux-ia32"
+cp ../Index.md ./
 git init
 git add .
 git commit -m "Deploy to Github Pages"
