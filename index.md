@@ -1,4 +1,5 @@
 ### Scratch 3.0 Daily Builds
+
 [Windows 64bit](./Win32-x64.zip)
 
 [Windows 32bit](./Win32-ia32.zip)
