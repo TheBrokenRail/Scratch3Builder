@@ -10,8 +10,6 @@ git config --global user.email "TheBrokenRail"
 git config --global user.name "Travis CI"
 
 # build (CHANGE THIS)
-Xvfb :99 &
-export DISPLAY=:99
 node index.js
 
 # deploy
