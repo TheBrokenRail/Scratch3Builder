@@ -22,6 +22,8 @@ zip -r Linux-x64.zip "Scratch 3.0-linux-x64"
 rm -r "Scratch 3.0-linux-x64"
 zip -r Linux-ia32.zip "Scratch 3.0-linux-ia32"
 rm -r "Scratch 3.0-linux-ia32"
+zip -r Mac-x64.zip "Scratch 3.0-darwin-x64"
+rm -r "Scratch 3.0-darwin-x64"
 cp ../index.md ./
 cp ../_config.yml ./
 git init
