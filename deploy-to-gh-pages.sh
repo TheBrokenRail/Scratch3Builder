@@ -14,6 +14,8 @@ node index.js
 
 # deploy
 cd out
+zip -r Win32.zip Scratch 3.0-win32-x64
+rmdir Scratch 3.0-win32-x64
 git init
 git add .
 git commit -m "Deploy to Github Pages"
