@@ -8,4 +8,6 @@
 
 [Linux 32bit](./Linux-ia32.tar.gz)
 
+[Linux ARMV71](./Linux-armv71.tar.gz)
+
 [Mac 64bit](./Mac-x64.tar.gz)
