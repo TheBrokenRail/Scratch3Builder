@@ -13,7 +13,7 @@ git config --global user.name "Travis CI"
 cd editor
 mkdir scratch-gui
 git clone -b gh-pages https://github.com/LLK/scratch-gui.git scratch-gui 
-electron-packager . "Scratch 3.0" --platform win32 --arch x64 --out out
+node_modules/.bin/electron-packager . "Scratch 3.0" --platform win32 --arch x64 --out out
 
 # deploy
 cd out
