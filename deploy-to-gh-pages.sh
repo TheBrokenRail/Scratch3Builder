@@ -15,19 +15,23 @@ mkdir scratch-gui
 git clone -b gh-pages https://github.com/LLK/scratch-gui.git scratch-gui
 cd ../
 ./node_modules/.bin/electron-packager . "Scratch 3.0" --platform win32 --arch x64 --out out
+./node_modules/.bin/electron-packager . "Scratch 3.0" --platform win32 --arch ia32 --out out
+./node_modules/.bin/electron-packager . "Scratch 3.0" --platform linux --arch x64 --out out
+./node_modules/.bin/electron-packager . "Scratch 3.0" --platform linux --arch ia32 --out out
+./node_modules/.bin/electron-packager . "Scratch 3.0" --platform darwin --arch x64 --out out
 
 # deploy
 cd out
 zip -r -q -9 Win32-x64.zip "Scratch 3.0-win32-x64"
 rm -r "Scratch 3.0-win32-x64"
-#zip -r -q -9 Win32-ia32.zip "Scratch 3.0-win32-ia32"
-#rm -r "Scratch 3.0-win32-ia32"
-#tar -cvzf Linux-x64.tar.gz "Scratch 3.0-linux-x64" > /dev/null 2>&1
-#rm -r "Scratch 3.0-linux-x64"
-#tar -cvzf Linux-ia32.tar.gz "Scratch 3.0-linux-ia32" > /dev/null 2>&1
-#rm -r "Scratch 3.0-linux-ia32"
-#tar -cvzf Mac-x64.tar.gz "Scratch 3.0-darwin-x64" > /dev/null 2>&1
-#rm -r "Scratch 3.0-darwin-x64"
+zip -r -q -9 Win32-ia32.zip "Scratch 3.0-win32-ia32"
+rm -r "Scratch 3.0-win32-ia32"
+tar -cvzf Linux-x64.tar.gz "Scratch 3.0-linux-x64" > /dev/null 2>&1
+rm -r "Scratch 3.0-linux-x64"
+tar -cvzf Linux-ia32.tar.gz "Scratch 3.0-linux-ia32" > /dev/null 2>&1
+rm -r "Scratch 3.0-linux-ia32"
+tar -cvzf Mac-x64.tar.gz "Scratch 3.0-darwin-x64" > /dev/null 2>&1
+rm -r "Scratch 3.0-darwin-x64"
 cp ../index.md ./
 cp ../_config.yml ./
 git init
