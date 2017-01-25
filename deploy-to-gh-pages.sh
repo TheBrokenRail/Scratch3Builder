@@ -14,11 +14,11 @@ cd editor
 mkdir scratch-gui
 git clone -b gh-pages https://github.com/LLK/scratch-gui.git scratch-gui
 cd ../
-./node_modules/.bin/electron-packager . "Scratch 3.0" --platform win32 --arch x64 --out out
-./node_modules/.bin/electron-packager . "Scratch 3.0" --platform win32 --arch ia32 --out out
-./node_modules/.bin/electron-packager . "Scratch 3.0" --platform linux --arch x64 --out out
-./node_modules/.bin/electron-packager . "Scratch 3.0" --platform linux --arch ia32 --out out
-./node_modules/.bin/electron-packager . "Scratch 3.0" --platform darwin --arch x64 --out out
+./node_modules/.bin/electron-packager . "Scratch 3.0" --platform win32 --arch x64 --out out --icon icon.png
+./node_modules/.bin/electron-packager . "Scratch 3.0" --platform win32 --arch ia32 --out out --icon icon.png
+./node_modules/.bin/electron-packager . "Scratch 3.0" --platform linux --arch x64 --out out --icon icon.png
+./node_modules/.bin/electron-packager . "Scratch 3.0" --platform linux --arch ia32 --out out --icon icon.png
+./node_modules/.bin/electron-packager . "Scratch 3.0" --platform darwin --arch x64 --out out --icon icon.icns
 
 # deploy
 cd out
