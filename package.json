@@ -2,7 +2,7 @@
   "name": "scratch3builder",
   "version": "1.0.0",
   "description": "A Program To Package Scratch 3.0",
-  "main": "index.js",
+  "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\"",
     "deploy": "sh deploy.sh"
@@ -10,6 +10,11 @@
   "author": "TheBrokenRail",
   "license": "ISC",
   "dependencies": {
-    "nativefier": "latest"
+    "electron": "latest",
+    "connect": "latest",
+    "http-serve": "latest"
+  },
+  "devDependencies": {
+    "electron-packager": "latest"
   }
 }
