@@ -31,7 +31,7 @@ tar -cvzf Linux-x64.tar.gz "Scratch 3.0-linux-x64" > /dev/null 2>&1
 rm -r "Scratch 3.0-linux-x64"
 tar -cvzf Linux-ia32.tar.gz "Scratch 3.0-linux-ia32" > /dev/null 2>&1
 rm -r "Scratch 3.0-linux-ia32"
-tar -cvzf Linux-armv7I.tar.gz "Scratch 3.0-linux-armv7l" > /dev/null 2>&1
+tar -cvzf Linux-armv7l.tar.gz "Scratch 3.0-linux-armv7l" > /dev/null 2>&1
 rm -r "Scratch 3.0-linux-armv7l"
 tar -cvzf Mac-x64.tar.gz "Scratch 3.0-darwin-x64" > /dev/null 2>&1
 rm -r "Scratch 3.0-darwin-x64"
