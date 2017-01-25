@@ -12,7 +12,7 @@
   "dependencies": {
     "electron": "latest",
     "connect": "latest",
-    "http-serve": "latest"
+    "serve-static": "latest"
   },
   "devDependencies": {
     "electron-packager": "latest"
