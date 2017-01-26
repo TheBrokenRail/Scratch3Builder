@@ -14,8 +14,8 @@ cd editor
 mkdir scratch-gui
 git clone https://github.com/LLK/scratch-gui.git scratch-gui-source
 cd scratch-gui-source
-npm install
-npm run build
+npm install --silent
+npm --silent run build
 cp -r ./build/* ../scratch-gui
 cd ../
 rm -r -f "scratch-gui-source"
