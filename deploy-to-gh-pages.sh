@@ -18,7 +18,7 @@ npm install
 npm run build
 cp -r ./build/* ../scratch-gui
 cd ../
-rm -r "scratch-gui-source"
+rm -r -f "scratch-gui-source"
 
 cd ../
 ./node_modules/.bin/electron-packager . "Scratch 3.0" --platform win32 --arch x64 --out out --icon icon.ico --asar true
