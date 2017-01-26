@@ -13,12 +13,16 @@ git config --global user.name "Travis CI"
 cd editor
 mkdir scratch-gui
 git clone https://github.com/LLK/scratch-gui.git scratch-gui-source
+echo "Cloned Scratch GUI Source"
 cd scratch-gui-source
 npm install > /dev/null 2>&1
+echo "Installed Dependencies"
 npm run build > /dev/null 2>&1
+echo "Compiled Scratch GUI"
 cp -r ./build/* ../scratch-gui
 cd ../
 rm -r -f "scratch-gui-source"
+echo "Removed Source Files"
 
 cd ../
 ./node_modules/.bin/electron-packager . "Scratch 3.0" --platform win32 --arch x64 --out out --icon icon.ico --asar true
