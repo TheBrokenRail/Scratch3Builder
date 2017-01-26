@@ -12,7 +12,14 @@ git config --global user.name "Travis CI"
 # build (CHANGE THIS)
 cd editor
 mkdir scratch-gui
-git clone -b gh-pages https://github.com/LLK/scratch-gui.git scratch-gui
+git clone https://github.com/LLK/scratch-gui.git scratch-gui-source
+cd scratch-gui-source
+npm install
+npm run build
+cp ./build/* ../scratch-gui
+cd ../
+rm -r "scratch-gui-source"
+
 cd ../
 ./node_modules/.bin/electron-packager . "Scratch 3.0" --platform win32 --arch x64 --out out --icon icon.ico --asar true
 ./node_modules/.bin/electron-packager . "Scratch 3.0" --platform win32 --arch ia32 --out out --icon icon.ico --asar true
