@@ -17,7 +17,8 @@ function createWindow () {
     width: 1200,
     height: 800,
     minWidth: 1200,
-    minHeight: 800
+    minHeight: 800,
+    title: "Scratch 3.0 GUI"
   })
 
   // and load the index.html of the app.
