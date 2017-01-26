@@ -11,3 +11,5 @@
 [Linux ARMV7L](./Linux-armv7l.tar.gz)
 
 [Mac 64bit](./Mac-x64.tar.gz)
+
+[Mac App Store 64bit](./Mac-App-Store-x64.tar.gz)
