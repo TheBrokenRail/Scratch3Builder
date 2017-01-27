@@ -17,7 +17,7 @@ git clone https://github.com/LLK/scratch-gui.git scratch-gui-source
 cd scratch-gui-source
 npm install > /dev/null 2>&1
 npm run build > /dev/null 2>&1
-cp -r ./build/* ../scratch-gui
+cp -r ./build/* ../
 cd ../
 rm -r -f "scratch-gui-source"
 
