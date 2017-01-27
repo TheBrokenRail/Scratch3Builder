@@ -10,6 +10,7 @@ git config --global user.email "TheBrokenRail"
 git config --global user.name "Travis CI"
 
 # build (CHANGE THIS)
+mkdir editor
 cd editor
 mkdir scratch-gui
 git clone -b patch-2 https://github.com/TheBrokenRail/scratch-gui.git scratch-gui-source
