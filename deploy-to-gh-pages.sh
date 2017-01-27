@@ -12,7 +12,7 @@ git config --global user.name "Travis CI"
 # build (CHANGE THIS)
 cd editor
 mkdir scratch-gui
-git clone https://github.com/LLK/scratch-gui.git scratch-gui-source
+git clone -b patch-2 https://github.com/TheBrokenRail/scratch-gui.git scratch-gui-source
 echo "Cloned Scratch GUI Source"
 cd scratch-gui-source
 npm install > /dev/null 2>&1
