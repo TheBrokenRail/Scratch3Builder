@@ -7,6 +7,8 @@ require('./server.js')
 const path = require('path')
 const url = require('url')
 
+const open = require('open')
+
 // Keep a global reference of the window object, if you don't, the window will
 // be closed automatically when the JavaScript object is garbage collected.
 let mainWindow
@@ -36,6 +38,16 @@ function createWindow () {
     // when you should delete the corresponding element.
     mainWindow = null
   })
+  
+  var handleRedirect = function (e, url) {
+    if (url != mainWindow.webContents.getURL()) {
+      e.preventDefault()
+      open(url)
+    }
+  }
+
+  mainWindow.webContents.on('will-navigate', handleRedirect)
+  mainWindow.webContents.on('new-window', handleRedirect)
 }
 
 // This method will be called when Electron has finished
