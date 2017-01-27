@@ -25,7 +25,7 @@ function createWindow () {
 
   // and load the index.html of the app.
   mainWindow.loadURL(url.format({
-    pathname: "localhost:8080",
+    pathname: "localhost:8080/scratch-gui",
     protocol: 'http:',
     slashes: true
   }))
