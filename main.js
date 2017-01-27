@@ -4,7 +4,7 @@ const app = electron.app
 // Module to create native browser window.
 const BrowserWindow = electron.BrowserWindow
 require('./server.js')
-const path = require('path')
+/const path = require('path')
 const url = require('url')
 
 const open = require('open')
@@ -25,7 +25,7 @@ function createWindow () {
 
   // and load the index.html of the app.
   mainWindow.loadURL(url.format({
-    pathname: "localhost:8080",
+    pathname: "localhost:8080/scratch-gui",
     protocol: 'http:',
     slashes: true
   }))
