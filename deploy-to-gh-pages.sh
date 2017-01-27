@@ -31,7 +31,6 @@ cd ../
 ./node_modules/.bin/electron-packager . "Scratch 3.0" --platform linux --arch ia32 --out out --icon icon.png --asar true
 ./node_modules/.bin/electron-packager . "Scratch 3.0" --platform linux --arch armv7l --out out --icon icon.png --asar true
 ./node_modules/.bin/electron-packager . "Scratch 3.0" --platform darwin --arch x64 --out out --icon icon.icns --asar true
-./node_modules/.bin/electron-packager . "Scratch 3.0" --platform mas --arch x64 --out out --icon icon.icns --asar true
 
 # deploy
 cd out
@@ -47,8 +46,6 @@ tar -cvzf Linux-armv7l.tar.gz "Scratch 3.0-linux-armv7l" > /dev/null 2>&1
 rm -r "Scratch 3.0-linux-armv7l"
 tar -cvzf Mac-x64.tar.gz "Scratch 3.0-darwin-x64" > /dev/null 2>&1
 rm -r "Scratch 3.0-darwin-x64"
-tar -cvzf Mac-App-Store-x64.tar.gz "Scratch 3.0-mas-x64" > /dev/null 2>&1
-rm -r "Scratch 3.0-mas-x64"
 cp ../index.md ./
 cp ../_config.yml ./
 git init
