@@ -39,8 +39,6 @@ function createWindow () {
     mainWindow = null
   })
   
-  mainWindow.webContents.openDevTools()
-  
   var handleRedirect = function (e, url) {
     if (url != mainWindow.webContents.getURL()) {
       e.preventDefault()
