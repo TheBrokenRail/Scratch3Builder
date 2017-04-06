@@ -14,7 +14,7 @@
     "connect": "latest",
     "serve-static": "latest",
     "open": "latest",
-    "openport": "latest"
+    "portfinder-sync": "latest"
   },
   "devDependencies": {
     "electron-packager": "latest"
