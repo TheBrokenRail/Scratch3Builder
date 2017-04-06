@@ -3,7 +3,7 @@ const electron = require('electron')
 const app = electron.app
 // Module to create native browser window.
 const BrowserWindow = electron.BrowserWindow
-var port = require('./server.js')
+const runServer = require('./server.js')
 const path = require('path')
 const url = require('url')
 
@@ -23,12 +23,14 @@ function createWindow () {
     title: "Scratch 3.0 GUI"
   })
 
-  // and load the index.html of the app.
-  mainWindow.loadURL(url.format({
-    pathname: "localhost:" + port,
-    protocol: 'http:',
-    slashes: true
-  }))
+  runServer(function (port) {
+    // and load the index.html of the app.
+    mainWindow.loadURL(url.format({
+      pathname: "localhost:" + port,
+      protocol: 'http:',
+      slashes: true
+    }))
+  });
   mainWindow.setMenu(null);
 
   // Emitted when the window is closed.
