@@ -3,7 +3,7 @@ const electron = require('electron')
 const app = electron.app
 // Module to create native browser window.
 const BrowserWindow = electron.BrowserWindow
-require('./server.js')
+var port = require('./server.js')
 const path = require('path')
 const url = require('url')
 
@@ -25,7 +25,7 @@ function createWindow () {
 
   // and load the index.html of the app.
   mainWindow.loadURL(url.format({
-    pathname: "localhost:8080",
+    pathname: "localhost:" + port,
     protocol: 'http:',
     slashes: true
   }))
