@@ -19,7 +19,6 @@ npm install > /dev/null 2>&1
 npm run build > /dev/null 2>&1
 cp -r ./build/* ../
 cd ../
-rm -r -f "scratch-gui-source"
 
 cd ../
 ./node_modules/.bin/electron-packager . "Scratch 3.0" --platform win32 --arch x64 --out out --icon icon.ico --asar true
@@ -31,18 +30,35 @@ cd ../
 
 # deploy
 cd out
-zip -r -q -9 Win32-x64.zip "Scratch 3.0-win32-x64"
+zip -r -q -9 Vertical-Win32-x64.zip "Scratch 3.0-win32-x64"
 rm -r "Scratch 3.0-win32-x64"
-zip -r -q -9 Win32-ia32.zip "Scratch 3.0-win32-ia32"
+zip -r -q -9 Vertical-Win32-ia32.zip "Scratch 3.0-win32-ia32"
 rm -r "Scratch 3.0-win32-ia32"
-tar -cvzf Linux-x64.tar.gz "Scratch 3.0-linux-x64" > /dev/null 2>&1
+tar -cvzf Vertical-Linux-x64.tar.gz "Scratch 3.0-linux-x64" > /dev/null 2>&1
 rm -r "Scratch 3.0-linux-x64"
-tar -cvzf Linux-ia32.tar.gz "Scratch 3.0-linux-ia32" > /dev/null 2>&1
+tar -cvzf Vertical-Linux-ia32.tar.gz "Scratch 3.0-linux-ia32" > /dev/null 2>&1
 rm -r "Scratch 3.0-linux-ia32"
-tar -cvzf Linux-armv7l.tar.gz "Scratch 3.0-linux-armv7l" > /dev/null 2>&1
+tar -cvzf Vertical-Linux-armv7l.tar.gz "Scratch 3.0-linux-armv7l" > /dev/null 2>&1
 rm -r "Scratch 3.0-linux-armv7l"
-tar -cvzf Mac-x64.tar.gz "Scratch 3.0-darwin-x64" > /dev/null 2>&1
+tar -cvzf Vertical-Mac-x64.tar.gz "Scratch 3.0-darwin-x64" > /dev/null 2>&1
 rm -r "Scratch 3.0-darwin-x64"
+cd ../
+
+rm -r -f "editor"
+cd editor
+mkdir scratch-gui
+git clone https://github.com/LLK/scratch-gui.git scratch-gui-source
+cd scratch-gui-source
+npm install > /dev/null 2>&1
+rm -f "./node_modules/scratch-blocks/dist/vertical.js"
+rename ./node_modules/scratch-blocks/dist/horizontal.js ./node_modules/scratch-blocks/dist/vertical.js
+npm run build > /dev/null 2>&1
+cp -r ./build/* ../
+cd ../
+cd out
+
+rm -r -f "scratch-gui-source"
+
 cp ../index.md ./
 cp ../_config.yml ./
 git init
