@@ -12,13 +12,13 @@ git config --global user.name "Travis CI"
 # build (CHANGE THIS)
 mkdir editor
 cd editor
-mkdir scratch-gui
 git clone https://github.com/LLK/scratch-gui.git scratch-gui-source
 cd scratch-gui-source
 npm install > /dev/null 2>&1
 npm run build > /dev/null 2>&1
 cp -r ./build/* ../
 cd ../
+rm -r -f "scratch-gui-source"
 
 cd ../
 ./node_modules/.bin/electron-packager . "Scratch 3.0" --platform win32 --arch x64 --out out --icon icon.ico --asar true
@@ -47,7 +47,6 @@ cd ../
 rm -r -f "editor"
 mkdir editor
 cd editor
-mkdir scratch-gui
 git clone https://github.com/LLK/scratch-gui.git scratch-gui-source
 cd scratch-gui-source
 npm install > /dev/null 2>&1
@@ -56,6 +55,7 @@ mv ./node_modules/scratch-blocks/dist/horizontal.js ./node_modules/scratch-block
 npm run build > /dev/null 2>&1
 cp -r ./build/* ../
 cd ../
+rm -r -f "scratch-gui-source"
 
 cd ../
 ./node_modules/.bin/electron-packager . "Scratch 3.0" --platform win32 --arch x64 --out out --icon icon.ico --asar true
@@ -79,8 +79,6 @@ tar -cvzf Horizontal-Linux-armv7l.tar.gz "Scratch 3.0-linux-armv7l" > /dev/null 
 rm -r "Scratch 3.0-linux-armv7l"
 tar -cvzf Horizontal-Mac-x64.tar.gz "Scratch 3.0-darwin-x64" > /dev/null 2>&1
 rm -r "Scratch 3.0-darwin-x64"
-
-rm -r -f "scratch-gui-source"
 
 cp ../index.md ./
 cp ../_config.yml ./
