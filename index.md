@@ -1,6 +1,6 @@
 # Scratch 3.0 Daily Builds
 
-## Vertical Blocks
+### Vertical Blocks
 
 [Windows 64bit](./Win32-x64.zip)
 
