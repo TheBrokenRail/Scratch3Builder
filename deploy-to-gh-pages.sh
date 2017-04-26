@@ -25,7 +25,7 @@ cd ../
 ./node_modules/.bin/electron-packager . "Scratch 3.0" --platform win32 --arch ia32 --out out --icon icon.ico --asar true
 ./node_modules/.bin/electron-packager . "Scratch 3.0" --platform linux --arch x64 --out out --icon icon.png --asar true
 ./node_modules/.bin/electron-packager . "Scratch 3.0" --platform linux --arch ia32 --out out --icon icon.png --asar true
-./node_modules/.bin/electron-packager . "Scratch 3.0" --platform linux --arch armv7l --out out --icon icon.png --asar true
+# ./node_modules/.bin/electron-packager . "Scratch 3.0" --platform linux --arch armv7l --out out --icon icon.png --asar true
 ./node_modules/.bin/electron-packager . "Scratch 3.0" --platform darwin --arch x64 --out out --icon icon.icns --asar true
 
 # deploy
@@ -38,8 +38,8 @@ tar -cvzf Vertical-Linux-x64.tar.gz "Scratch 3.0-linux-x64" > /dev/null 2>&1
 rm -r "Scratch 3.0-linux-x64"
 tar -cvzf Vertical-Linux-ia32.tar.gz "Scratch 3.0-linux-ia32" > /dev/null 2>&1
 rm -r "Scratch 3.0-linux-ia32"
-tar -cvzf Vertical-Linux-armv7l.tar.gz "Scratch 3.0-linux-armv7l" > /dev/null 2>&1
-rm -r "Scratch 3.0-linux-armv7l"
+# tar -cvzf Vertical-Linux-armv7l.tar.gz "Scratch 3.0-linux-armv7l" > /dev/null 2>&1
+# rm -r "Scratch 3.0-linux-armv7l"
 tar -cvzf Vertical-Mac-x64.tar.gz "Scratch 3.0-darwin-x64" > /dev/null 2>&1
 rm -r "Scratch 3.0-darwin-x64"
 cd ../
@@ -66,7 +66,7 @@ echo Native
 ./node_modules/.bin/electron-packager . "Scratch 3.0" --platform win32 --arch ia32 --out out --icon icon.ico --asar true
 ./node_modules/.bin/electron-packager . "Scratch 3.0" --platform linux --arch x64 --out out --icon icon.png --asar true
 ./node_modules/.bin/electron-packager . "Scratch 3.0" --platform linux --arch ia32 --out out --icon icon.png --asar true
-./node_modules/.bin/electron-packager . "Scratch 3.0" --platform linux --arch armv7l --out out --icon icon.png --asar true
+# ./node_modules/.bin/electron-packager . "Scratch 3.0" --platform linux --arch armv7l --out out --icon icon.png --asar true
 ./node_modules/.bin/electron-packager . "Scratch 3.0" --platform darwin --arch x64 --out out --icon icon.icns --asar true
 
 # deploy
@@ -80,8 +80,8 @@ tar -cvzf Horizontal-Linux-x64.tar.gz "Scratch 3.0-linux-x64" > /dev/null 2>&1
 rm -r "Scratch 3.0-linux-x64"
 tar -cvzf Horizontal-Linux-ia32.tar.gz "Scratch 3.0-linux-ia32" > /dev/null 2>&1
 rm -r "Scratch 3.0-linux-ia32"
-tar -cvzf Horizontal-Linux-armv7l.tar.gz "Scratch 3.0-linux-armv7l" > /dev/null 2>&1
-rm -r "Scratch 3.0-linux-armv7l"
+# tar -cvzf Horizontal-Linux-armv7l.tar.gz "Scratch 3.0-linux-armv7l" > /dev/null 2>&1
+# rm -r "Scratch 3.0-linux-armv7l"
 tar -cvzf Horizontal-Mac-x64.tar.gz "Scratch 3.0-darwin-x64" > /dev/null 2>&1
 rm -r "Scratch 3.0-darwin-x64"
 
