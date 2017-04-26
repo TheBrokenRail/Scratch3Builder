@@ -50,14 +50,18 @@ cd editor
 mkdir scratch-gui
 git clone https://github.com/LLK/scratch-gui.git scratch-gui-source
 cd scratch-gui-source
+echo Install
 npm install > /dev/null 2>&1
 rm -f "./node_modules/scratch-blocks/dist/vertical.js"
+echo Rename
 rename ./node_modules/scratch-blocks/dist/horizontal.js ./node_modules/scratch-blocks/dist/vertical.js
+echo Build
 npm run build > /dev/null 2>&1
 cp -r ./build/* ../
 cd ../
 
 cd ../
+echo Native
 ./node_modules/.bin/electron-packager . "Scratch 3.0" --platform win32 --arch x64 --out out --icon icon.ico --asar true
 ./node_modules/.bin/electron-packager . "Scratch 3.0" --platform win32 --arch ia32 --out out --icon icon.ico --asar true
 ./node_modules/.bin/electron-packager . "Scratch 3.0" --platform linux --arch x64 --out out --icon icon.png --asar true
@@ -66,6 +70,7 @@ cd ../
 ./node_modules/.bin/electron-packager . "Scratch 3.0" --platform darwin --arch x64 --out out --icon icon.icns --asar true
 
 # deploy
+echo Remove
 cd out
 zip -r -q -9 Horizontal-Win32-x64.zip "Scratch 3.0-win32-x64"
 rm -r "Scratch 3.0-win32-x64"
@@ -82,6 +87,7 @@ rm -r "Scratch 3.0-darwin-x64"
 
 rm -r -f "scratch-gui-source"
 
+echo Final
 cp ../index.md ./
 cp ../_config.yml ./
 git init
