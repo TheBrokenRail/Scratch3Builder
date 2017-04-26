@@ -17,6 +17,3 @@ env:
 cache:
   directories:
   - node_modules
-install:
-- npm install
-- npm update
