@@ -22,12 +22,12 @@ cd ../
 rm -r -f "scratch-gui-source"
 
 cd ../
-./node_modules/.bin/electron-packager . "Scratch 3.0" --platform win32 --arch x64 --out out --icon icon.ico --asar true
-./node_modules/.bin/electron-packager . "Scratch 3.0" --platform win32 --arch ia32 --out out --icon icon.ico --asar true
-./node_modules/.bin/electron-packager . "Scratch 3.0" --platform linux --arch x64 --out out --icon icon.png --asar true
-./node_modules/.bin/electron-packager . "Scratch 3.0" --platform linux --arch ia32 --out out --icon icon.png --asar true
-./node_modules/.bin/electron-packager . "Scratch 3.0" --platform linux --arch armv7l --out out --icon icon.png --asar true
-./node_modules/.bin/electron-packager . "Scratch 3.0" --platform darwin --arch x64 --out out --icon icon.icns --asar true
+./node_modules/.bin/electron-packager . "Scratch 3.0" --platform win32 --arch x64 --out out --icon icon.ico --prune false
+./node_modules/.bin/electron-packager . "Scratch 3.0" --platform win32 --arch ia32 --out out --icon icon.ico --prune false
+./node_modules/.bin/electron-packager . "Scratch 3.0" --platform linux --arch x64 --out out --icon icon.png --prune false
+./node_modules/.bin/electron-packager . "Scratch 3.0" --platform linux --arch ia32 --out out --icon icon.png --prune false
+./node_modules/.bin/electron-packager . "Scratch 3.0" --platform linux --arch armv7l --out out --icon icon.png --prune false
+./node_modules/.bin/electron-packager . "Scratch 3.0" --platform darwin --arch x64 --out out --icon icon.icns --prune false
 
 # deploy
 cd out
@@ -35,7 +35,7 @@ zip -r -q -9 Win32-x64.zip "Scratch 3.0-win32-x64"
 rm -r "Scratch 3.0-win32-x64"
 zip -r -q -9 Win32-ia32.zip "Scratch 3.0-win32-ia32"
 rm -r "Scratch 3.0-win32-ia32"
-tar -cvzf Linux-x64.tar.gz "Scratch 3.0-linux-x64"
+tar -cvzf Linux-x64.tar.gz "Scratch 3.0-linux-x64" > /dev/null 2>&1
 rm -r "Scratch 3.0-linux-x64"
 tar -cvzf Linux-ia32.tar.gz "Scratch 3.0-linux-ia32" > /dev/null 2>&1
 rm -r "Scratch 3.0-linux-ia32"
