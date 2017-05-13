@@ -18,5 +18,6 @@ cache:
   directories:
   - node_modules
 install:
+- npm install -g npm@latest
 - npm update
 - npm install
