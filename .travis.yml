@@ -18,6 +18,5 @@ cache:
   directories:
   - node_modules
 install:
-- npm install --verbose
-- npm cache clean
-- npm update --verbose
+- npm install
+- npm update
