@@ -10,7 +10,6 @@ git config --global user.email "TheBrokenRail"
 git config --global user.name "Travis CI"
 
 # build (CHANGE THIS)
-npm install
 mkdir editor
 cd editor
 mkdir scratch-gui
