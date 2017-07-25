@@ -17,6 +17,7 @@
     "openport": "latest"
   },
   "devDependencies": {
-    "electron-packager": "latest"
+    "electron-packager": "latest",
+    "asar": "latest"
   }
 }
