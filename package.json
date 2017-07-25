@@ -10,14 +10,13 @@
   "author": "TheBrokenRail",
   "license": "ISC",
   "dependencies": {
-    "electron": "latest",
-    "connect": "latest",
-    "serve-static": "latest",
-    "open": "latest",
-    "openport": "latest"
+    "electron": "1.7.2",
+    "connect": "3.6.2",
+    "serve-static": "1.12.3",
+    "open": "0.0.3",
+    "openport": "0.0.4"
   },
   "devDependencies": {
-    "electron-packager": "latest",
-    "asar": "latest"
+    "electron-packager": "8.7.0"
   }
 }
