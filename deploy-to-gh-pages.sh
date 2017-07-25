@@ -8,6 +8,7 @@ mkdir out
 # config
 git config --global user.email "TheBrokenRail"
 git config --global user.name "Travis CI"
+npm install -g asar
 
 # build (CHANGE THIS)
 mkdir editor
