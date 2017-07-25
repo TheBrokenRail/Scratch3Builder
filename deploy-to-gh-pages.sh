@@ -8,7 +8,6 @@ mkdir out
 # config
 git config --global user.email "TheBrokenRail"
 git config --global user.name "Travis CI"
-npm install -g asar
 
 # build (CHANGE THIS)
 mkdir editor
@@ -23,12 +22,12 @@ cd ../
 rm -r -f "scratch-gui-source"
 
 cd ../
-./node_modules/.bin/electron-packager . "Scratch 3.0" --platform win32 --arch x64 --out out --icon icon.ico --prune false --asar true
-./node_modules/.bin/electron-packager . "Scratch 3.0" --platform win32 --arch ia32 --out out --icon icon.ico --prune false --asar true
-./node_modules/.bin/electron-packager . "Scratch 3.0" --platform linux --arch x64 --out out --icon icon.png --prune false --asar true
-./node_modules/.bin/electron-packager . "Scratch 3.0" --platform linux --arch ia32 --out out --icon icon.png --prune false --asar true
-./node_modules/.bin/electron-packager . "Scratch 3.0" --platform linux --arch armv7l --out out --icon icon.png --prune false --asar true
-./node_modules/.bin/electron-packager . "Scratch 3.0" --platform darwin --arch x64 --out out --icon icon.icns --prune false --asar true
+./node_modules/.bin/electron-packager . "Scratch 3.0" --platform win32 --arch x64 --out out --icon icon.ico --prune false --asar
+./node_modules/.bin/electron-packager . "Scratch 3.0" --platform win32 --arch ia32 --out out --icon icon.ico --prune false --asar
+./node_modules/.bin/electron-packager . "Scratch 3.0" --platform linux --arch x64 --out out --icon icon.png --prune false --asar
+./node_modules/.bin/electron-packager . "Scratch 3.0" --platform linux --arch ia32 --out out --icon icon.png --prune false --asar
+./node_modules/.bin/electron-packager . "Scratch 3.0" --platform linux --arch armv7l --out out --icon icon.png --prune false --asar
+./node_modules/.bin/electron-packager . "Scratch 3.0" --platform darwin --arch x64 --out out --icon icon.icns --prune false --asar
 
 # deploy
 cd out
