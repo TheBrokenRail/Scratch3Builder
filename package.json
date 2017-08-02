@@ -17,6 +17,6 @@
     "openport": "0.0.4"
   },
   "devDependencies": {
-    "electron-packager": "8.7.0"
+    "electron-packager": "8.7.1"
   }
 }
