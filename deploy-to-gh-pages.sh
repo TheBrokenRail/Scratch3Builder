@@ -4,6 +4,7 @@ set -o errexit
 
 rm -rf out
 mkdir out
+cat ./package-lock.json
 
 # config
 git config --global user.email "TheBrokenRail"
