@@ -23,17 +23,17 @@ rm -r -f "scratch-gui-source"
 
 cd ../
 echo "Win x64"
-./node_modules/.bin/electron-packager . "Scratch 3.0" --platform win32 --arch x64 --out out --icon icon.ico --no-prune --asar true
+./node_modules/.bin/electron-packager . "Scratch 3.0" --platform win32 --arch x64 --out out --icon icon.ico --asar true --no-prune
 echo "Win x32"
-./node_modules/.bin/electron-packager . "Scratch 3.0" --platform win32 --arch ia32 --out out --icon icon.ico --no-prune --asar true
+./node_modules/.bin/electron-packager . "Scratch 3.0" --platform win32 --arch ia32 --out out --icon icon.ico --asar true --no-prune
 echo "Linux x64"
-./node_modules/.bin/electron-packager . "Scratch 3.0" --platform linux --arch x64 --out out --icon icon.png --no-prune --asar true
+./node_modules/.bin/electron-packager . "Scratch 3.0" --platform linux --arch x64 --out out --icon icon.png --asar true --no-prune
 echo "Linux x32"
-./node_modules/.bin/electron-packager . "Scratch 3.0" --platform linux --arch ia32 --out out --icon icon.png --no-prune --asar true
+./node_modules/.bin/electron-packager . "Scratch 3.0" --platform linux --arch ia32 --out out --icon icon.png --asar true --no-prune
 echo "Linux ARM"
-./node_modules/.bin/electron-packager . "Scratch 3.0" --platform linux --arch armv7l --out out --icon icon.png --no-prune --asar true
+./node_modules/.bin/electron-packager . "Scratch 3.0" --platform linux --arch armv7l --out out --icon icon.png --asar true --no-prune
 echo "Mac x64"
-./node_modules/.bin/electron-packager . "Scratch 3.0" --platform darwin --arch x64 --out out --icon icon.icns --no-prune --asar true
+./node_modules/.bin/electron-packager . "Scratch 3.0" --platform darwin --arch x64 --out out --icon icon.icns --asar true --no-prune
 
 # deploy
 cd out
