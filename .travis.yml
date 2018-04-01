@@ -1,13 +1,13 @@
- language: node_js
+language: node_js
 node_js:
 - "6"
 sudo: false
 addons:
   apt:
     sources:
-    - sourceline: 'ppa:ubuntu-wine/ppa'
+     - sourceline: 'ppa:ubuntu-wine/ppa'
     packages:
-    - wine
+     - wine
 script:
   - bash ./deploy-to-gh-pages.sh
 env:
