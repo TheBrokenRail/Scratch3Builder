@@ -13,10 +13,10 @@
     "electron": "^1.8.2-beta5",
     "connect": "^3.6.2",
     "serve-static": "^1.12.3",
-    "open": "^0.0.3",
+    "open": "^0.0.5",
     "openport": "^0.0.4"
   },
   "devDependencies": {
-    "electron-packager": "8.7.1"
+    "electron-packager": "11.2.0"
   }
 }
