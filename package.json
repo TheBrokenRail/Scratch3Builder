@@ -10,7 +10,7 @@
   "author": "TheBrokenRail",
   "license": "ISC",
   "dependencies": {
-    "electron": "^1.8.2-beta5",
+    "electron": "^3.0.0",
     "connect": "^3.6.2",
     "serve-static": "^1.12.3",
     "open": "^0.0.5",
