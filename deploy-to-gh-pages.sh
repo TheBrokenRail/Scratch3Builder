@@ -57,5 +57,5 @@ git lfs track *
 git add .gitattributes
 git commit -m "Deploy to Github Pages"
 git push --force "https://${GITHUB_TOKEN}@github.com/${GITHUB_REPO}.git" master:gh-pages
-git lfs push
+git lfs push --force "https://${GITHUB_TOKEN}@github.com/${GITHUB_REPO}.git" master:gh-pages
 exit 0
