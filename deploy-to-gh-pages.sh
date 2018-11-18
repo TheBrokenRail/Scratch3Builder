@@ -52,7 +52,8 @@ rm -r "Scratch 3.0-darwin-x64"
 cp ../index.md ./
 cp ../_config.yml ./
 git init
-git add .
+git lfs track "*"
+git add .gitattributes
 git commit -m "Deploy to Github Pages"
 git push --force "https://${GITHUB_TOKEN}@github.com/${GITHUB_REPO}.git" master:gh-pages
 exit 0
