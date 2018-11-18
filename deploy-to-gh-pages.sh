@@ -53,7 +53,7 @@ cp ../index.md ./
 cp ../_config.yml ./
 git init
 git lfs install
-git lfs track .
+git lfs track *
 git add .gitattributes
 git commit -m "Deploy to Github Pages"
 git push --force "https://${GITHUB_TOKEN}@github.com/${GITHUB_REPO}.git" master:gh-pages
