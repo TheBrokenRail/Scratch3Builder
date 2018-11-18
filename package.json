@@ -14,7 +14,7 @@
     "connect": "^3.6.2",
     "serve-static": "^1.12.3",
     "open": "^0.0.5",
-    "openport": "^0.0.4"
+    "openport": "^0.0.5"
   },
   "devDependencies": {
     "electron-packager": "11.2.0"
