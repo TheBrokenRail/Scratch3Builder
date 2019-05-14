@@ -1,0 +1,8 @@
+Linux-x64.tar.gz filter=lfs diff=lfs merge=lfs -text
+Mac-x64.tar.gz filter=lfs diff=lfs merge=lfs -text
+Win32-ia32.zip filter=lfs diff=lfs merge=lfs -text
+Win32-x64.zip filter=lfs diff=lfs merge=lfs -text
+_config.yml filter=lfs diff=lfs merge=lfs -text
+index.md filter=lfs diff=lfs merge=lfs -text
+Linux-armv7l.tar.gz filter=lfs diff=lfs merge=lfs -text
+Linux-ia32.tar.gz filter=lfs diff=lfs merge=lfs -text
