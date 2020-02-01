@@ -13,7 +13,7 @@
     "electron": "^2.0.0",
     "connect": "^3.6.2",
     "serve-static": "^1.12.3",
-    "open": "^0.0.5",
+    "open": "^7.0.2",
     "openport": "^0.0.5"
   },
   "devDependencies": {
